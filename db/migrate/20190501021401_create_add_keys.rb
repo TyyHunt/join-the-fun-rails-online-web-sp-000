@@ -1,8 +1,7 @@
-class CreateAddKeys < ActiveRecord::Migration[5.0]
+class AddKeys < ActiveRecord::Migration[5.0]
   def change
-    create_table :add_keys do |t|
-
-      t.timestamps
+    add_column :rides, :passenger_id, :integer
+    add_column :rides, :taxi_id, :integer
     end
   end
 end
